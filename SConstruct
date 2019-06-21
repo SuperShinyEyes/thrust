@@ -28,7 +28,7 @@ def RecursiveGlob(env, pattern, directory = Dir('.'), exclude = '\B'):
 gnu_compiler_flags = {
   'warn_all'           : ['-Wall'],
   'warnings_as_errors' : ['-Werror'],
-  'release'            : ['-O2'],
+  'release'            : ['-O0'],
   'debug'              : ['-g'],
   'exception_handling' : [],
   'cpp'                : [],
@@ -43,7 +43,7 @@ gnu_compiler_flags = {
 clang_compiler_flags = {
   'warn_all'           : ['-Wall'],
   'warnings_as_errors' : ['-Werror'],
-  'release'            : ['-O2'],
+  'release'            : ['-O0'],
   'debug'              : ['-g'],
   'exception_handling' : [],
   'cpp'                : [],
